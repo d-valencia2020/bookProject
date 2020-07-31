@@ -1,0 +1,13 @@
+<app-header title="Share book"></app-header>
+<app-action-icon icon="x" pathUrl=""></app-action-icon>
+
+<div class="container">
+<form (submit)="onSubmit()">
+    <div class="form-group">
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name" placeholder="enter name">
+        <input type="text" class="form-control" id="author" name="author" [(ngModel)]="author" placeholder="enter author">
+        <input type="text" class="form-control" id="image" name="imageUrl" [(ngModel)]="imageUrl" placeholder="enter your image">
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+</div>
